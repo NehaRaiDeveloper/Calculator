@@ -1,0 +1,132 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #f3f4f7, #e3e8f0);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #4a90e2;
+    color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Shapes Section */
+.shapes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.shape {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+/* Rounded Square */
+.rounded-square {
+    border-radius: 15px;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+}
+
+/* Diamond Shape */
+.diamond {
+    transform: rotate(45deg);
+    background: linear-gradient(to right, #a18cd1, #fbc2eb);
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+/* Gradient Circle */
+.gradient-circle {
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #fbc2eb, #a6c1ee);
+}
+
+/* Gradient Clipboard */
+.gradient-clipboard {
+    width: 80px;
+    height: 120px;
+    background: linear-gradient(to bottom, #f3e7e9, #e3eeff);
+    border-radius: 10px;
+    position: relative;
+}
+
+.gradient-clipboard:before {
+    content: "";
+    width: 60px;
+    height: 20px;
+    background: #d4d4f7;
+    border-radius: 10px;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+/* Calculator Section */
+.calculator-container {
+    margin: 40px auto;
+    max-width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    font-size: 1.5rem;
+    padding: 10px;
+    background: #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 15px;
+    background: #4a90e2;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #357ab8;
+}
+
+.operator {
+    background: #f5a623;
+}
+
+.operator:hover {
+    background: #d48c1a;
+}
+
+#clear {
+    background: #d0021b;
+}
+
+#clear:hover {
+    background: #a90115;
+}
+
+
